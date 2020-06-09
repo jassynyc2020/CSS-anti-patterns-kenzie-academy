@@ -7,6 +7,12 @@
   padding: 0;
 }
 
+body {
+  background-color: white;
+  width: 100%;
+  margin: 1.5rem;
+}
+
 h1,
 h2,
 h3,
@@ -17,16 +23,65 @@ p {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+li {
+  list-style: none;
+}
+
+@media (max-width: 550px) {
+}
+
+/* layout styles */
+.schedule-tour-box {
+  display: flex;
+  flex-direction: column;
+  background-color: #9933ff;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.navbar-items {
+  color: #9933ff;
+}
+
+.video-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial-1-image {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.testimonial-2-image {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+}
+
 /* block styles */
 .navbar {
   display: flex;
   flex-direction: column;
   width: 100%;
-  border: 1rem solid lightblue;
+  border: 0.33rem solid grey;
 }
 
 .ul {
   color: purple;
 }
 
-/* Desktop Styles */
+/* Desktop Styles -------------------------------->
+/* base styles */
+@media (max-width: 1200px) {
+  body {
+    display: flex;
+    flex-direction: row;
+  }
+}
