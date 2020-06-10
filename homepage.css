@@ -5,6 +5,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -27,24 +28,27 @@ li {
   list-style: none;
 }
 
+hr {
+  width: 80%;
+}
+
 @media (max-width: 550px) {
 }
 
 /* layout styles */
-.schedule-tour-box {
+
+.schedule-tour {
   display: flex;
   flex-direction: column;
-  background-color: #9933ff;
 }
 
-.navbar {
+.meet-description {
   display: flex;
   flex-direction: column;
-
-}
-
-.navbar-items {
-  color: #9933ff;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  max-width: 1200px;
 }
 
 .video-image {
@@ -65,6 +69,19 @@ li {
   align-items: right;
 }
 
+.students {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.programs-box {
+  background-color: violet;
+  color: white;
+  margin-top: 1.5em;
+}
+
 /* block styles */
 .navbar {
   display: flex;
@@ -77,8 +94,52 @@ li {
   color: purple;
 }
 
+.signup-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.programs-question {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1em;
+  margin-left: 5em;
+  width: auto;
+  max-width: 80rem;
+  padding: 2em;
+  background-color: lightgray;
+}
+
+.members {
+  margin-bottom: 1em;
+  display: flex;
+  width: 100%;
+  margin: 2rem;
+  padding: 2em;
+}
+
+.class {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  padding: 2em;
+}
+
+.video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* Desktop Styles -------------------------------->
+
 /* base styles */
+
 @media (max-width: 1200px) {
   body {
     display: flex;
