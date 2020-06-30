@@ -82,25 +82,26 @@ hr {
   margin-top: 1.5em;
 }
 
-/* block styles */
-.navbar {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  border: 0.33rem solid grey;
+.navbar-item {
+  list-style: none;
+  text-decoration: none;
 }
-
+/* block styles */
+.navbar-list {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 2em;
+}
 .ul {
   color: purple;
 }
-
 .signup-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 1em;
 }
-
 .programs-question {
   display: flex;
   flex-direction: column;
@@ -112,7 +113,6 @@ hr {
   padding: 2em;
   background-color: lightgray;
 }
-
 .members {
   margin-bottom: 1em;
   display: flex;
@@ -121,28 +121,11 @@ hr {
   padding: 2em;
 }
 
-.class {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 1em;
-  margin-top: 1em;
+.class-schedule-container, .video-section, .meet-description-section, .meet-title,
+.members-list, .testimonials-sections {
+  display: grid;
   padding: 2em;
+  justify-content: space-evenly;
 }
 
-.video {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
-/* Desktop Styles -------------------------------->
-
-/* base styles */
-
-@media (max-width: 1200px) {
-  body {
-    display: flex;
-    flex-direction: row;
-  }
-}
